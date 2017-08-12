@@ -1,0 +1,48 @@
+#  app environment for local and production
+run.config:
+
+  # elixir runtime
+  engine: elixir
+
+  engine.config:
+    runtime: elixir-1.5
+    erlang_runtime: erlang-20.0
+
+  # cache node_modules
+  cache_dirs:
+    - node_modules
+
+  # we need nodejs in development
+  # ensure inotify exists for hot-code reloading
+  dev_packages:
+    - nodejs
+    - inotify-tools
+
+  # add node_module bins to the $PATH
+  extra_path_dirs:
+    - node_modules/.bin
+
+  extra_steps:
+    - 'yarn install'
+
+  # enable the filesystem watcher
+  fs_watch: true
+
+# add postgres as a data component
+data.db:
+  image: nanobox/postgresql:9.6
+
+data.storage:
+  image: nanobox/unfs:0.9
+
+deploy.config:
+  extra_steps:
+    - 'mix phoenix.digest'
+
+web.site:
+  start:
+    app: node-start mix phoenix.server
+
+  writable_dirs:
+    - 'apps/hello/priv'
+    - 'apps/hello/_build'

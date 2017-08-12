@@ -1,0 +1,9 @@
+LOG:  database system was shut down at 2017-08-11 08:26:50 BST
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received smart shutdown request
+LOG:  received SIGHUP, reloading configuration files
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down

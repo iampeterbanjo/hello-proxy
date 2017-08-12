@@ -1,0 +1,58 @@
+LOG:  database system was shut down at 2017-02-16 22:05:17 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  received SIGHUP, reloading configuration files
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-02-17 08:21:23 GMT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  database "persona_dev" does not exist
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  autovacuum launcher shutting down
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+FATAL:  terminating connection due to administrator command
+LOG:  received smart shutdown request
+LOG:  received SIGHUP, reloading configuration files
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2017-04-19 08:28:31 BST
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  received SIGHUP, reloading configuration files
+LOG:  shutting down
+LOG:  database system is shut down
