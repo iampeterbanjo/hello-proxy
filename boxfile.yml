@@ -18,6 +18,9 @@ run.config:
     - nodejs
     - inotify-tools
 
+  extra_packages:
+    - nginx
+
   # add node_module bins to the $PATH
   extra_path_dirs:
     - node_modules/.bin
@@ -42,6 +45,8 @@ deploy.config:
 web.site:
   start:
     app: node-start mix phoenix.server
+    nginx: cp -r nginx/ /data && nginx -c /data/nginx/nginx.conf
+    log: tail -f /data/etc/nginx/nginx_error_log
 
   writable_dirs:
     - 'apps/hello/priv'

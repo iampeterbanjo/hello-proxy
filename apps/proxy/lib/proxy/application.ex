@@ -5,7 +5,7 @@ defmodule Proxy.Application do
   def start(_type, _args) do
     import Supervisor.Spec, warn: false
 
-    port = (System.get_env("PORT") || "8080") |> String.to_integer
+    port = (System.get_env("PORT") || "3333") |> String.to_integer
     cowboy = Plug.Adapters.Cowboy.child_spec(:http, Proxy.Plug, [], [port: port])
 
     children = [
