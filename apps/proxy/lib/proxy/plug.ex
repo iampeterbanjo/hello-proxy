@@ -5,8 +5,8 @@ defmodule Proxy.Plug do
 
   def call(conn, _opts) do
     cond do
-      false ->
-        HelloWeb.Endpoint.call(conn, [])
+      conn.host =~ ~r{hola.} ->
+        HolaWeb.Endpoint.call(conn, [])
       true ->
         HelloWeb.Endpoint.call(conn, [])
     end
